@@ -51,8 +51,83 @@
     </div>
   </div>
 
+  
+  <div id="services" class="our-services section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="section-heading wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
+            <h6>Why Bookseed?</h6>
+            <h2>To Promote the <span>United Nations</span> Sustainable Development Goal 4: <em>Education</em></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="service-item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="icon">
+                  <img src="/static/assets/images/service-icon-01.png" alt="">
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="right-content">
+                  <h4>Accoring to the UN:</h4>
+                  <p>Entrenched inequities in education have only worsened during the pandemic.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="service-item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="icon">
+                  <img src="/static/assets/images/service-icon-02.png" alt="">
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="right-content">
+                  <h4>Solution:</h4>
+                  <p>We must increase the accessibility to educational resources and make it exciting to learn.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="service-item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="icon">
+                  <img src="/static/assets/images/service-icon-03.png" alt="">
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="right-content">
+                  <h4>How:</h4>
+                  <p>Bookseed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <div id="features" class="features section">
     <div class="container">
+      <div class="row">
+      <div class="section-heading wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
+        <h2 style="text-align:center;"><em>Technologies Used:</em></h2>
+      </div>
+    </div>
       <div class="row">
         <div class="col-lg-12">
           <div class="features-content">
@@ -62,7 +137,7 @@
                   <div class="icon"></div>
                   <h4>Model</h4>
                   <div class="line-dec"></div>
-                  <p>Python accesses the description of the original book and all of the other options in a .csv file and converts them into vectors. Then, the sklearn cosin similarity midel is run to determine the similarity of all options to the original. Finally, the number output is used to sort the csv file to obtain the top 4 books with similar descriptions.</p>
+                  <p>Python accesses the description of the original book and all of the other options in a .csv file and converts them into vectors using a pre-built machine learning feature-extraction model from sklearn. Then, the sklearn cosine similarity model is run to determine how similar those extracted features are to the original text. Finally, the number output is used to sort the csv file to obtain the top 4 books with similar descriptions.</p>
                 </div>
               </div>
               <div class="col-lg-3">
@@ -78,7 +153,7 @@
                   <div class="icon"></div>
                   <h4>Flask</h4>
                   <div class="line-dec"></div>
-                  <p>Flask connects the back-end python to cache in browser, whihc then calls HTML templates and loads CSS, JavaScript, and JQuery. Flask also allows for python o be used inline, which is how the library is made - python for loops inside the HTML file.</p>
+                  <p>Flask connects the back-end python to cache in browser, which then calls HTML templates and loads CSS, JavaScript, and JQuery. Flask also allows for python to be used inline. This allows the HTML template for the library page to iterate through nested lists in order to display the books as images using CSS formating and JavaScript reactions to hovering.</p>
                 </div>
               </div>
               <div class="col-lg-3">
@@ -86,7 +161,7 @@
                   <div class="icon"></div>
                   <h4>Product</h4>
                   <div class="line-dec"></div>
-                  <p>The library allos one to view over 6,000 books with their description, ratings, and genre's. Clicking on one book will generate a page of reccomended similar books based off of the description. Additionally, a map of all the public libraries in America is given so that users may locate where they can get the book of their choosing fre of charge.</p>
+                  <p>The library allows users to view over 6,000 books with their description, ratings, and genres. Clicking on a book will generate a page of reccomended similar books based off of the description, chosen from the .csv file by machine learning. Additionally, a map of all the public libraries in America is given so that users may locate where they can get the book of their choosing fre of charge.</p>
                 </div>
               </div>
             </div>
@@ -95,7 +170,6 @@
       </div>
     </div>
   </div>
-<!-- Why this app is needed: inclde statistics and UN goals, include increased accessibility -->
 
   <div id="about" class="about-us section">
     <div class="container">
@@ -136,127 +210,5 @@
       </div>
     </div>
   </div>
-
- <!-- Services: Maybe replace with what I learned, creaticity, or more technical skill info?  -->
- <!--
-  <div id="services" class="our-services section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 offset-lg-3">
-          <div class="section-heading wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
-            <h6>Our Services</h6>
-            <h2>Discover What We Do &amp; <span>Offer</span> To Our <em>Clients</em></h2>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="service-item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="icon">
-                  <img src="/assets/images/service-icon-01.png" alt="">
-                </div>
-              </div>
-              <div class="col-lg-8">
-                <div class="right-content">
-                  <h4>Similar Websites</h4>
-                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dormque laudantium.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="service-item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="icon">
-                  <img src="/assets/images/service-icon-02.png" alt="">
-                </div>
-              </div>
-              <div class="col-lg-8">
-                <div class="right-content">
-                  <h4>Website Trends</h4>
-                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dormque laudantium.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="service-item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.5s">
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="icon">
-                  <img src="/assets/images/service-icon-03.png" alt="">
-                </div>
-              </div>
-              <div class="col-lg-8">
-                <div class="right-content">
-                  <h4>Traffic Analysis</h4>
-                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dormque laudantium.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="service-item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.6s">
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="icon">
-                  <img src="/assets/images/service-icon-03.png" alt="">
-                </div>
-              </div>
-              <div class="col-lg-8">
-                <div class="right-content">
-                  <h4>Optimizing Keywords</h4>
-                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dormque laudantium.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="service-item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.7s">
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="icon">
-                  <img src="/assets/images/service-icon-01.png" alt="">
-                </div>
-              </div>
-              <div class="col-lg-8">
-                <div class="right-content">
-                  <h4>Page Optimizations</h4>
-                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dormque laudantium.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="service-item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.8s">
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="icon">
-                  <img src="/assets/images/service-icon-02.png" alt="">
-                </div>
-              </div>
-              <div class="col-lg-8">
-                <div class="right-content">
-                  <h4>Deep URL Analysis</h4>
-                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dormque laudantium.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
--->
 
   {% endblock %}
